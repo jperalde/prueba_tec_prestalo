@@ -1,2 +1,2 @@
-# prueba_tec_prestalo
-Prueba Técnica Prestalo - Desarrollador Full Stack Ssr
+# Prueba Técnica Prestalo - Desarrollador Full Stack Ssr
+Desarrollo de un sistema comparador de prestamos
