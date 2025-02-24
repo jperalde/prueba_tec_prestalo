@@ -1,0 +1,17 @@
+services:
+  frontend: 
+    container_name: frontend-docker
+    image: frontend-docker:0.0.1
+    build:
+      context: ./frontend
+      dockerfile: ./frontend/Dockerfile
+    ports:
+      - "8080:80"
+  backend: 
+    container_name: backend-docker
+    image: backend-docker:0.0.1
+    build:
+      context: ./backend
+      dockerfile: ./backend/Dockerfile
+    ports:
+      - "3000:3000"

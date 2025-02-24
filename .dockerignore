@@ -1,0 +1,14 @@
+node_modules
+.gitDockerfile*
+.dockerignore
+.next
+.git
+.jest_cache
+.docker-compose
+.vscode
+.terraform
+.husky
+dist
+*.log
+*.md
+.git
