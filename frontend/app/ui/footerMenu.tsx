@@ -3,7 +3,7 @@ export default function FooterMenu() {
     <footer className="bg-gray-500 text-white text-center w-full py-4">
       <div className="grid-cols-1 md:flex justify-center items-center gap-3">
         <a
-          href=""
+          href="/calculadora-prestamos"
           className="block lg:inline-block text-gray-200 hover:text-white"
         >
           Calculadora de prestamos
