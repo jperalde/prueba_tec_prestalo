@@ -21,11 +21,11 @@ export default function ListaOfertas({
       animate={{ x: 0, opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 0.75 }}
     >
-      <h1 className="text-3xl font-bold text-center md:text-start">
+      <h1 className="text-3xl font-bold text-center my-6">
         Ofertas pre-aprobadas
       </h1>
       <div
-        className="relative flex w-full lg:w-1/2 gap-6 snap-x overflow-x-auto"
+        className="relative flex w-full gap-6 snap-x overflow-x-auto"
         style={{ msOverflowStyle: "none", scrollbarWidth: "none" }}
       >
         <div className="snap-center shrink-0">

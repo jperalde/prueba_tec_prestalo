@@ -14,13 +14,13 @@ export default function OfferCard({ offer }: { offer: EntityOffer }) {
         Crédito aprobado: {offer.approved_quantity}&euro;
       </p>
       <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-        Periodo: {offer.approved_quantity} meses
+        Periodo: {offer.payment_terms} meses
       </p>
       <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
         Interes (TAE%): {offer.taxes_percentage}%
       </p>
       <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-        Pago mensual: {offer.taxes_percentage}&euro;
+        Pago mensual: {offer.monthly_payment}&euro;
       </p>
       <a
         href={offer.offer_url}

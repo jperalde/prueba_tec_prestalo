@@ -1,4 +1,3 @@
-version: '2.32.4'
 services:
   mongo:
     container_name: mongo-prueba
@@ -11,11 +10,11 @@ services:
     volumes:
         - mongodata:/data/db
   frontend: 
-    container_name: frontend-docker
-    image: frontend-docker:0.0.1
+    container_name: nextjs-docker
+    image: nextjs-docker:0.0.1
     build:
       context: ./frontend
-      dockerfile: ./frontend/Dockerfile
+      dockerfile: ./Dockerfile
     ports:
       - 8000:8000
   backend: 
@@ -23,7 +22,7 @@ services:
     image: backend-docker:0.0.1
     build:
       context: ./backend
-      dockerfile: ./backend/Dockerfile
+      dockerfile: ./Dockerfile
     ports:
       - 3000:3000
 volumes:

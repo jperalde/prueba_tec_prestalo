@@ -50,10 +50,14 @@ export default function Calculadora({
     await requestLoan(formData)
       .then((res) => {
         if (res?.errors) throw new Error(JSON.stringify(res.errors));
-        if (res?.status !== 200 || !res?.offers)
+        if (res?.status !== 201 )
           throw new Error(
             "Fallo al realizar la solicitud. Pruebe de nuevo más tarde."
           );
+          if (!res?.offers || res.offers.length === 0)
+            throw new Error(
+              "No se han encontrado ofertas para su solicitud. Pruebe de nuevo más tarde."
+            );
         setOffersList(res.offers);
       })
       .catch((error) => {
